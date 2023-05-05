@@ -1,0 +1,8 @@
+.About_component {
+    background-image: url(../../Assets/eventSamplejpg.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: white;
+}

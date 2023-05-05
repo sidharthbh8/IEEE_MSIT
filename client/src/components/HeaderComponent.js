@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function HeaderComponent() {
     return (
         <>
-            <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark" color='$indigo-900' style={{ height: '1.8rem' }}>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" color='$indigo-900' style={{ height: '1.8rem' }}>
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -19,7 +19,7 @@ function HeaderComponent() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar >
-            <Navbar sticky="top" collapseOnSelect expand="lg" variant="dark" style={{ backgroundColor: "#0B2447" }}>
+            <Navbar sticky="top" collapseOnSelect expand="lg" variant="dark" style={{ backgroundColor: "#18122B" }}>
                 <Container>
                     <Navbar.Brand href="/">IEEE-MSIT</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
