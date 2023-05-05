@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
+import HomePage from "./Pages/Home/HomePage";
 import EventsPage from "./Pages/EventsPage";
 import HeaderComponent from "./components/HeaderComponent";
 import FooterComponent from "./components/FooterComponent";
@@ -11,7 +11,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/events" element={<EventsPage />} />
       </Routes>
-      <FooterComponent />
+      {/* <FooterComponent /> */}
     </BrowserRouter>
   );
 }
