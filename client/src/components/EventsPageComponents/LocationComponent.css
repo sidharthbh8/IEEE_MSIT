@@ -1,0 +1,23 @@
+.right-side{
+    display: flex;
+    flex-direction: column;
+    margin-right: 95px;
+    margin-left: 95px;
+}
+
+.location{
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.map{
+    margin-bottom: 30px;
+}
+.cllg-name{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+.address{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}

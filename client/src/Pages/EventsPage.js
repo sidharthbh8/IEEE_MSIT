@@ -3,12 +3,13 @@ import ContactUsComponent from "../components/EventsPageComponents/ContactUsComp
 import DescriptionComponent from "../components/EventsPageComponents/DescriptionComponent";
 import LocationComponent from "../components/EventsPageComponents/LocationComponent";
 import MoreEventsComponent from "../components/EventsPageComponents/MoreEventsComponent";
+import "./EventsPage.css"
 
 const EventsPage = () => {
     return (
         <>
             <AboutEventsComponent />
-            <div>
+            <div className="container2">
                 <div className="description"><DescriptionComponent /></div>
                 <div className="location"><LocationComponent /></div>
             </div>

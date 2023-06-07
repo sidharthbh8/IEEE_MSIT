@@ -1,13 +1,20 @@
 import "./AboutEventsComponent.css"
-import eventImage from "../../Assets/eventSamplejpg.jpg"
-var HostName = "Host_name";
+import head from "../../Assets/head.jpeg"
+
 function AboutEventsComponent() {
     return (
-        <div className="About_component">
-            <div className="host_info">
-                Host - <span>{HostName}</span>
-            </div>
+        <div class="container1 h-32 md:h-[480px]" >
+        <img class="background-img" src={head} alt=""/>
+        <div class="title">
+          <h1>Host - <span id="speaker">Rajneesh Kumar</span></h1>
+          <h1 id="profile">SWE-II at Google</h1>
+          <div class="certificate">
+            <i class="fa-solid fa-medal fa-2xl" style={{color: "#d07016"}}></i>
+            <h3 id="text">Free Certificates To All Attendees</h3>
+          </div>
+          <a href="#"><button id="registerbtn">Register Now</button></a>
         </div>
+      </div>
     );
 }
 export default AboutEventsComponent;
