@@ -1,21 +1,21 @@
 import "./HomeComponent.css"
-import CompImg from "../../Assets/Image3.png";
 
 function HomeComponent() {
     return (
-        <div className="home">
-            <h1>Home</h1>
-            <div className="home_content">
-                <div className="home_text">
-                    <h2>Lead a wave of <span>change</span></h2>
-                    <p>Technical society for Engineering, Computing, and Technology Information.</p>
-                    <p>Effective networking channel </p>
-                    <p>While the World benefits from whats new, IEEE focuses on whats new, IEEE
-                    focuses on whats next</p>
+        <>
+            <img src="https://raw.githubusercontent.com/IEEE-MSIT-Project-Committee-23/IEEE_MSIT/main/client/src/Assets/Image3.png" alt="error in loading image" className="homeImage float-sm-end float-lg-end float-md-end float-xl-end img-fluid " height="500px" width="500px"></img>
+            <header className="home">
+                <div className="d-flex lh-lg flex-column justify-content-around p-5 text-sm-start text-md-start text-l-start bd-highlight fs-1 text-dark-emphasis">Home
+                    <section class="">
+                        <h1 className="homeFont"><strong>Lead a wave of </strong></h1>
+                        <h1 className="text-primary homeFont">change</h1>
+                        <p className="homeFont">Technical society for <strong>Engineering, Computing, </strong>and <strong>Technology Information.</strong></p>
+                        <p className="text-primary homeFont">Effective networking channel</p>
+                        <p className="homeFont">While the World benefits from what's new,<strong>IEEE </strong>focuses on what's <strong>next</strong></p>
+                    </section>
                 </div>
-                <img src={CompImg} className="home_Img"/>
-            </div>   
-        </div>
+            </header>
+        </>
     );
 }
 export default HomeComponent;

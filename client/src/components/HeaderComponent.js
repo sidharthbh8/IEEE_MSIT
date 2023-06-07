@@ -10,15 +10,15 @@ function HeaderComponent() {
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#features">IEEE.org</Nav.Link>
+                        <Nav className="me-auto" >
+                            <Nav.Link href="#features" style={{ zIndex: '50', color: 'white' }}>IEEE.org</Nav.Link>
                             <Nav.Link href="#pricing">IEEE xplore Digital Library</Nav.Link>
                             <Nav.Link href="#features">IEEE Standards</Nav.Link>
                             <Nav.Link href="#pricing">IEEE Spectrum</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
-            </Navbar >
+            </Navbar>
             <Navbar sticky="top" collapseOnSelect expand="lg" variant="dark" style={{ backgroundColor: "#18122B" }}>
                 <Container>
                     <Navbar.Brand href="/">IEEE-MSIT</Navbar.Brand>

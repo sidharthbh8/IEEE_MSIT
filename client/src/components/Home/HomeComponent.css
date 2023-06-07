@@ -1,4 +1,4 @@
-.home{
+.home {
     background-image: url(../../Assets/Bg-Home.png);
     height: 100vh;
     background-size: cover;
@@ -6,3 +6,10 @@
     color: white;
 }
 
+.homeFont {
+    font-size: 1.7rem;
+}
+
+.homeImage {
+    margin-top: 10rem;
+}
