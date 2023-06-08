@@ -3,6 +3,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 128px;
+  }
+  @media (min-width:799px) {
+    .container1 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 480px;
+      }
   }
   
   .background-img {
