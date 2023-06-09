@@ -3,7 +3,7 @@ import head from "../../Assets/head.jpeg"
 
 function AboutEventsComponent() {
     return (
-        <div class="container1 h-32 md:h-[480px]" >
+        <div class="container1" >
         <img class="background-img" src={head} alt=""/>
         <div class="title">
           <h1>Host - <span id="speaker">Rajneesh Kumar</span></h1>

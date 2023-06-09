@@ -9,12 +9,12 @@ const EventsPage = () => {
     return (
         <>
             <AboutEventsComponent />
-            <div className="container2">
+            {/* <div className="container2">
                 <div className="description"><DescriptionComponent /></div>
                 <div className="location"><LocationComponent /></div>
             </div>
             <ContactUsComponent />
-            <MoreEventsComponent />
+            <MoreEventsComponent /> */}
         </>
     );
 };
