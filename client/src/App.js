@@ -3,6 +3,7 @@ import HomePage from "./Pages/HomePage";
 import EventsPage from "./Pages/EventsPage";
 import HeaderComponent from "./components/HeaderComponent";
 import FooterComponent from "./components/FooterComponent";
+import SignUpPage from "./Pages/SignUpPage";
 function App() {
   return (
     <BrowserRouter>
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/events" element={<EventsPage />} />
+        <Route path="/SignUp" element={<SignUpPage />} />
       </Routes>
       <FooterComponent />
     </BrowserRouter>
