@@ -4,12 +4,16 @@ import EventsPage from "./Pages/EventsPage";
 import HeaderComponent from "./components/HeaderComponent";
 import FooterComponent from "./components/FooterComponent";
 import SignUpPage from "./Pages/SignUpPage";
+import HomeComponent from "./components/Home/HomeComponent";
+import AboutUsComponent from "./components/AboutUs/AboutUsComponent";
 function App() {
   return (
     <BrowserRouter>
       <HeaderComponent />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/Home" element={<HomeComponent />} />
+        <Route path="/AboutUs" element={<AboutUsComponent />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/SignUp" element={<SignUpPage />} />
       </Routes>

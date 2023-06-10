@@ -25,8 +25,8 @@ function HeaderComponent() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="#pricing">About Us</Nav.Link>
+                            <Nav.Link href="/Home">Home</Nav.Link>
+                            <Nav.Link href="/AboutUs">About Us</Nav.Link>
                             <Nav.Link href="/events">Event</Nav.Link>
                             <Nav.Link href="#pricing">Gallery</Nav.Link>
                             <Nav.Link href="#pricing">Executive Board</Nav.Link>
