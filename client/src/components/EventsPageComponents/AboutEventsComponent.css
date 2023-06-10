@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 128px;
+    height: 25vh;
     z-index: 1;
     /* Add a higher z-index value */
 }
@@ -55,9 +55,9 @@
 @media (max-width: 799px) {
     .title {
         top: 5rem;
-        left: 2rem;
-        text-align: center;
-        font-size: 10px;
+        left: 1rem;
+        text-align: left;
+        font-size: 10px; 
     }
 }
 
@@ -126,17 +126,28 @@
     background-color: rgb(24, 24, 24);
     color: white;
 }
+.certificate i{
+    margin-top: 12%;
+}
 
 @media (max-width: 799px) {
+    #text {
+        padding: 0rem;
+        margin-left: 0.5rem;
+        font-weight: 200;
+    }
     #registerbtn {
-        margin-top: 0.75rem;
+        margin-top: 0rem;
         padding: 0.5rem;
-        width: 55%;
+        width: 45%;
         font-size: 10px;
         border-radius: 1.5rem;
         border: none;
         background-color: rgb(24, 24, 24);
         color: white;
+    }
+    .certificate i{
+        margin-top: 7%;
     }
 }
 
@@ -149,3 +160,4 @@
 #registerbtn:active {
     opacity: 0.85;
 }
+
