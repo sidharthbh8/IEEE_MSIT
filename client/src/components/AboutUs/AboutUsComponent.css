@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: center;
     padding: 2rem;
+    overflow-x: hidden;
 
 }
 
@@ -13,7 +14,7 @@
     height: 15%;
 }
 
-h1 {
+.about_us h1 {
     color: white;
     margin-left: 1.5rem;
     font-size: 48px;
@@ -64,4 +65,27 @@ img[src="https://i.postimg.cc/nLZDJGsz/3-RAS-1.png"] {
 img[src="https://i.postimg.cc/HnfrPwDT/4-WIE-1.png"] {
     width: 206px;
     height: 139.35px;
+}
+
+@media (max-width: 768px) {
+    .body_aboutUs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer_aboutUs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer_aboutUs img {
+        width: 50%;
+        box-sizing: border-box;
+
+    }
+
+    /* img[src="https://i.postimg.cc/jSZQj1y9/Image-4-1.png"] {
+        width: 20rem;
+        height: 20rem;
+    } */
 }

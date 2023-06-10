@@ -13,7 +13,6 @@ const HomePage = () => {
             <AboutUsComponent />
             <EventsComponent />
             {/* <GalleryComponent /> */}
-            {/* <FooterComponent/> */}
         </>
     );
 };

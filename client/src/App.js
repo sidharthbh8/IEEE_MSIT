@@ -12,8 +12,6 @@ function App() {
       <HeaderComponent />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Home" element={<HomeComponent />} />
-        <Route path="/AboutUs" element={<AboutUsComponent />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/SignUp" element={<SignUpPage />} />
       </Routes>

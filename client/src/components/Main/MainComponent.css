@@ -1,4 +1,4 @@
-.main{
+.main {
     background-image: url(../../Assets/Bg-Main.png);
     height: 100vh;
     background-size: cover;
@@ -10,23 +10,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 
-.logo_text{
+.logo_text {
     font-size: 22px;
 }
 
-.main_text{
+.main_text {
     font-weight: normal;
     font-size: 20px;
 }
 
-.IEEE_logo{
+.IEEE_logo {
     height: 100px;
 }
 
-.main_content{
+.main_content {
     margin: 5em 0 0 3em;
     text-align: left;
     width: 400px;
