@@ -1,16 +1,23 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './FooterComponent.css';
+
 const FooterComponent = () => {
     return (
-        <footer>
-            <Container fluid>
-                <Row className='mt-5'>
-                    <Col className="bg-dark text-center text-white py-5">Copyright &copy; 2023, IEEE MSIT</Col>
-                </Row>
-            </Container>
-        </footer>
+        <footer style={{margin:0}} >
+                <div style={{backgroundColor: '#1E1E1E'}} className="footer">
+                <div className="footerCol"><a href="ieee.msit.in">Contact Us</a></div>
+                <div className='borderLeft'></div>                
+                <div className="footerCol"><a href="https://www.ieee.org/membership/join/index.html">JOIN IEEE</a></div>
+<div className='borderLeft'></div>                
 
+                <div className="footerCol"><a href="https://msit.in">Maharaja Surajmal Institute of Technology</a></div>
+<div className='borderLeft'></div>                
+
+                <div className="footerCol">Copyright &copy; 2023, IEEE MSIT</div>
+                </div>
+        </footer>
     );
 }
 export default FooterComponent;

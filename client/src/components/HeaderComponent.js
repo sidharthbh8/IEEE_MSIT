@@ -11,10 +11,10 @@ function HeaderComponent() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto" >
-                            <Nav.Link href="#features" style={{ zIndex: '50', color: 'white' }}>IEEE.org</Nav.Link>
-                            <Nav.Link href="#pricing">IEEE xplore Digital Library</Nav.Link>
-                            <Nav.Link href="#features">IEEE Standards</Nav.Link>
-                            <Nav.Link href="#pricing">IEEE Spectrum</Nav.Link>
+                            <Nav.Link href="http://www.ieee.org/index.html" style={{ zIndex: '50', color: 'white' }}>IEEE.org</Nav.Link>
+                            <Nav.Link href="http://ieeexplore.ieee.org/Xplore/home.jsp">IEEE xplore Digital Library</Nav.Link>
+                            <Nav.Link href="https://www.ieee.org/standards/index.html">IEEE Standards</Nav.Link>
+                            <Nav.Link href="https://spectrum.ieee.org/">IEEE Spectrum</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -25,17 +25,16 @@ function HeaderComponent() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#about">About Us</Nav.Link>
-                            <Nav.Link href="/events">Event</Nav.Link>
-                            <Nav.Link href="#pricing">Gallery</Nav.Link>
-                            <Nav.Link href="#pricing">Executive Board</Nav.Link>
+                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href="/home#about">About Us</Nav.Link>
+                            <Nav.Link href="/home#event">Event</Nav.Link> 
+                            <Nav.Link href="#executive">Executive Board</Nav.Link>
 
                         </Nav>
-                        <Nav>
+                        {/* <Nav>
                             <Nav.Link href="#deets">Login</Nav.Link>
                             <Nav.Link href="#deets">SignUp</Nav.Link>
-                        </Nav>
+                        </Nav> */}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

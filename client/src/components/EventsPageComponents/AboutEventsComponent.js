@@ -5,7 +5,7 @@ function AboutEventsComponent() {
   return (
     <div class="container1" >
       <img class="background-img" src={head} alt="" />
-      <div class="title">
+      {/* <div class="title">
         <h1>Host - <span id="speaker">Rajneesh Kumar</span></h1>
         <h1 id="profile">SWE-II at Google</h1>
         <div class="certificate">
@@ -13,7 +13,7 @@ function AboutEventsComponent() {
           <h3 id="text">Free Certificates To All Attendees</h3>
         </div>
         <a href="#"><button id="registerbtn">Register Now</button></a>
-      </div>
+      </div> */}
     </div>
   );
 }

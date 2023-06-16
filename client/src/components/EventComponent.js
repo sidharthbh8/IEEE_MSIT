@@ -1,6 +1,8 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./EventComponent.css"
+import "./EventComponent.css";
+import events from "../Constants/events"
+
 function EventsComponent() {
     const responsive = {
         superLargeDesktop: {
@@ -22,14 +24,21 @@ function EventsComponent() {
         }
     };
     return (
-        <>
+        <div className="eventsList" id="event">
+            <h1>Events</h1>
             <Carousel responsive={responsive}>
-                <div className="eventCaraouselImage">Item 1</div>
-                <div className="eventCaraouselImage">Item 2</div>
-                <div className="eventCaraouselImage">Item 3</div>
-                <div className="eventCaraouselImage">Item 4</div>
+                {
+                    events.map(event=>(
+                        <div className="eventCaraouselImage"><img style={{cursor:"pointer"}} src={`${event.image}`}></img></div>
+                    ))
+                }
+                {
+                    events.map(event=>(
+                        <div className="eventCaraouselImage"><img src={`${event.image}`}></img></div>
+                    ))
+                }
             </Carousel>;
-        </>
+        </div>
     );
 }
 export default EventsComponent;
