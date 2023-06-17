@@ -1,22 +1,23 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
-import EventsPage from "./Pages/EventsPage";
-import HeaderComponent from "./components/HeaderComponent";
-import FooterComponent from "./components/FooterComponent";
-import SignUpPage from "./Pages/SignUpPage";
-import HomeComponent from "./components/Home/HomeComponent";
-import AboutUsComponent from "./components/AboutUs/AboutUsComponent";
+import HomePage from "./Pages/Home";
+import EventPage from "./Pages/Event";
+import ExeCom from "./Pages/ExeCom"
+import Navbar from "./components/Common/Navbar";
+import Footer from "./components/Common/Footer";
+import SignUpPage from "./Pages/Signup";
+
 function App() {
   return (
     <BrowserRouter>
-      <HeaderComponent />
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} /> 
         <Route path="/home" element={<HomePage />} />
-        <Route path="/events" element={<EventsPage />} />
-        <Route path="/SignUp" element={<SignUpPage />} />
+        <Route path="/events" element={<EventPage />} />
+        <Route path="/execom" element={<ExeCom />} />
+        {/* <Route path="/SignUp" element={<SignUpPage />} /> */}
       </Routes>
-      <FooterComponent />
+      <Footer />
     </BrowserRouter>
   );
 }
