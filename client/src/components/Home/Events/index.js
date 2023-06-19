@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './style.css';
 import events from "../../../Constants/events"
+import { Link } from "react-router-dom";
 
 function EventsComponent() {
     const responsive = {
@@ -27,16 +28,22 @@ function EventsComponent() {
         <div className="eventsList" id="event">
             <h1>Events</h1>
             <Carousel responsive={responsive}>
-                {
-                    events.map(event=>(
-                        <div className="eventCaraouselImage"><img style={{cursor:"pointer"}} src={`${event.image}`}></img></div>
-                    ))
-                }
-                {
-                    events.map(event=>(
-                        <div className="eventCaraouselImage"><img src={`${event.image}`}></img></div>
-                    ))
-                }
+            {
+  events.map((event) => (
+    <div className="eventCarouselImage" key={event.id}>
+      <Link
+        to={`/events/${event.id}`}
+        state={{
+          desc: event.desc,
+          date: event.date,
+          image: event.image
+        }}
+      >
+        <img style={{ cursor: "pointer" }} src={event.coverImage} alt={event.name} />
+      </Link>
+    </div>
+  ))
+}
             </Carousel>;
         </div>
     );

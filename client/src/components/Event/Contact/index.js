@@ -1,19 +1,26 @@
 import React from 'react'
 import './style.css';
-import { BsInstagram } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+} from "react-share";
 
 
 const ContactUsComponent = () => {
+  const currentUrl = window.location.href;
   return (
     <div><div className="container3">
       <div className="contact">
         <div className="contact-detail">
           <h2>How can I contact the organiser with any question</h2>
           <br />
-          <p style={{ fontSize: "20px" }}>Please contact :-  <a href="#" style={{ textDecoration: "none" }}>+91989******9</a> for any event related query </p>
+          <p style={{ fontSize: "20px" }}>Please contact :-  <a style={{ textDecoration: "none" }}>+91989******9</a> for any event related query </p>
         </div>
       </div>
       <div className="socials">
@@ -22,10 +29,10 @@ const ContactUsComponent = () => {
         </div>
         <br />
         <div className="socials-logo">
-          <a href="#" className="fa"><BsInstagram /></a>
-          <a href="#" className="fa"><BsLinkedin /></a>
-          <a href="#" className="fa"><BsTwitter /></a>
-          <a href="#" className="fa"><BsFacebook /></a>
+          <a className="fa"><WhatsappShareButton url={currentUrl}><BsWhatsapp /></WhatsappShareButton></a>
+          <a className="fa"><LinkedinShareButton url={currentUrl}><BsLinkedin /></LinkedinShareButton></a>
+          <a className="fa"><TwitterShareButton url={currentUrl}><BsTwitter /></TwitterShareButton></a>
+          <a className="fa"><FacebookShareButton url={currentUrl}><BsFacebook /></FacebookShareButton></a>
         </div>
       </div>
     </div></div>
@@ -33,3 +40,4 @@ const ContactUsComponent = () => {
 }
 
 export default ContactUsComponent
+

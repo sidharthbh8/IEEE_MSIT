@@ -1,10 +1,10 @@
 import './style.css';
 import head from "../../../Assets/head.jpeg"
 
-function AboutEventsComponent() {
+function AboutEventsComponent({image}) {
   return (
     <div class="container1" >
-      <img class="background-img" src={head} alt="" />
+      <img class="background-img" src={image} alt="" />
       {/* <div class="title">
         <h1>Host - <span id="speaker">Rajneesh Kumar</span></h1>
         <h1 id="profile">SWE-II at Google</h1>
