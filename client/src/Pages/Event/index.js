@@ -4,13 +4,17 @@ import Description from "../../components/Event/Description";
 import Location from "../../components/Event/Location";
 import MoreEvents from "../../components/Event/MoreEvents";
 import "./style.css";
-import { useLocation } from "react-router-dom";
+import { useLocation,useParams } from "react-router-dom";
 import { useEffect } from "react";
+import Events from "../../Constants/events"
 
 
 const EventsPage = () => {
     const location = useLocation();
-  const { desc, date, image } = location.state || {};
+    const {id}=useParams();
+    const eventData = Events.find(event => event.id.toString() === id);
+    console.log(eventData)
+  const { desc, date, image } = location.state || eventData;
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
