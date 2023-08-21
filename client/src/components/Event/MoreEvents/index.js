@@ -15,7 +15,7 @@ const MoreEventsComponent = () => {
         <div className="cards">
           <div className="cont">
             {events.map((event) => (
-              <div className="card">
+              <div className="card" onClick={()=>{window.scrollTo(0,0)}}>
                 <div className="img">
                   <Link
                     to={`/events/${event.id}`}

@@ -2,11 +2,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {useNavigate} from 'react-router-dom';
 
 function HeaderComponent() {
+    const navigate=useNavigate();
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" color='$indigo-900' style={{ height: '1.8rem' }}>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" color='$indigo-900' id="topNav" >
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -26,8 +28,8 @@ function HeaderComponent() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/home#about">About Us</Nav.Link>
-                            <Nav.Link href="/home#event">Events</Nav.Link> 
+                            <Nav.Link onClick={()=>{navigate("/")}}  href="#about">About Us</Nav.Link>
+                            <Nav.Link onClick={()=>{navigate("/")}} href="#event">Events</Nav.Link> 
                             <Nav.Link href="/execom">Executive Board</Nav.Link>
 
                         </Nav>

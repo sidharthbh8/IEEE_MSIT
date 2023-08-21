@@ -20,7 +20,7 @@ const ContactUsComponent = () => {
         <div className="contact-detail">
           <h2>How can I contact the organiser with any question</h2>
           <br />
-          <p style={{ fontSize: "20px" }}>Please contact :-  <a style={{ textDecoration: "none" }}>+91989******9</a> for any event related query </p>
+          <p style={{ fontSize: "20px" }}>Please contact :-  <a style={{ textDecoration: "none" }}>+91 88517 11857</a> for any event related query </p>
         </div>
       </div>
       <div className="socials">

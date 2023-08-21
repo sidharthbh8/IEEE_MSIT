@@ -7,8 +7,8 @@ const FooterComponent = () => {
     return (
         <footer style={{margin:0}} >
                 <div style={{backgroundColor: '#1E1E1E'}} className="footer">
-                <div className="footerCol"><a href="ieee.msit.in">Contact Us</a></div>
-                <div className='borderLeft'></div>                
+                {/* <div className="footerCol"><a href="httieee.msit.in">Contact Us</a></div> */}
+                {/* <div className='borderLeft'></div>                 */}
                 <div className="footerCol"><a href="https://www.ieee.org/membership/join/index.html">JOIN IEEE</a></div>
 <div className='borderLeft'></div>                
 

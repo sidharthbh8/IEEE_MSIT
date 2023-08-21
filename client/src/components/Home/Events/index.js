@@ -39,7 +39,8 @@ function EventsComponent() {
           image: event.image
         }}
       >
-        <img style={{ cursor: "pointer" }} src={event.coverImage} alt={event.name} />
+        <img style={{ cursor: "pointer","transform":"translateX(30px)" }} src={event.coverImage} alt={event.name} />
+        <label className="eventCarouselText">View More</label>
       </Link>
     </div>
   ))
