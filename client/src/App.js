@@ -5,6 +5,8 @@ import ExeCom from "./Pages/ExeCom";
 import Navbar from "./components/Common/Navbar";
 import Footer from "./components/Common/Footer";
 import SignUpPage from "./Pages/Signup";
+import AdminLogin from "./Pages/Admin/Login";
+import PostEvent from "./Pages/Admin/PostEvent";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/events/:id/*" element={<EventPage />} />
         <Route path="/execom" element={<ExeCom />} />
         {/* <Route path="/SignUp" element={<SignUpPage />} /> */}
+        <Route path="/admin/login" element={AdminLogin}/>
+        <Route path="/admin/postEvent" element={PostEvent}/>
       </Routes>
       <Footer />
     </BrowserRouter>
