@@ -31,7 +31,13 @@ const execomDetailsOptions = [
     },
     {
         execom_section: "",
-        section_heading: "Project and Web Dev Committee",
+        section_heading: "Web Dev Committee",
+        heading_color: "#000000"
+    },
+    
+    {
+        execom_section: "",
+        section_heading: "Project Committee",
         heading_color: "#000000"
     },
     {
@@ -63,7 +69,13 @@ const execomDetailsOptions = [
         execom_section: "",
         section_heading: "Sponsorship and Membership Development Committee",
         heading_color: "#000000"
-    }
+    },
+    {
+        execom_section: "",
+        section_heading: "Disciplinary Committee",
+        heading_color: "#000000"
+    },
+    
 ]
 
 export default execomDetailsOptions;
